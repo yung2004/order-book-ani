@@ -1,24 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import OrderBook from './components/orderbook.components';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='title'>Order Book</div>
+        <div className='IntroText'>
+        Here demostrate simple order book operations.
+        This implmenet using reactjs and element is animated using TransitionGroup and CSSTransition.
+        </div>
+        <OrderBook>
+        </OrderBook>
     </div>
   );
 }

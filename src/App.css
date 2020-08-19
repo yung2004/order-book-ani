@@ -1,18 +1,28 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+
+
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family: "Work Sans", -apple-system, ".SFNSText-Regular", "San Francisco",
+  "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif !important;
 }
 
+/* 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,7 +36,7 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +45,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.title {
+  color: #ebebeb;
+  border-color: #292929;
+  line-height: 0.75em;
+  font-size: 5em;
+  font-weight: 900;
+  font-family: "Work Sans", -apple-system, ".SFNSText-Regular", "San Francisco",
+    "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif !important;
+  text-transform: uppercase;
+  line-height: 0.75em;
+  padding: 48px 0 32px 0;
+  max-width: 1000px;
+  @media (max-width: 768px) {
+    font-size: 3em;
+  }
+}
+
+.IntroText {
+  color: #fafafa;
+  font-family: "Work Sans", -apple-system, ".SFNSText-Regular", "San Francisco",
+    "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif !important;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.45em;
+  max-width: 900px;
+  padding: 0 0 32px 0;
 }
